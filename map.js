@@ -19,6 +19,7 @@ var TILE_URL = 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
 function init() {
 	initMap();
 	initAutocomplete();
+  console.log('hello world');
 }
 
 function initMap() {
@@ -110,11 +111,13 @@ function addCustomControls(map){
 }
 
 function resetMap(){
-  marker.setMap(null);
+
+  if (marker) { marker.setMap(null) }
   map.setCenter(caCenter);
   map.setZoom(defaultZoom);
   document.getElementById('autocomplete').value = '';
-  districtUpper, districtLower,lng,zip = '';
+  districtUpper, districtLower, zip = '';
+  //todo clear mailchimp section
 }
 
 function ResetControl(controlDiv, map) {
