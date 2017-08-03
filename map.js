@@ -8,7 +8,9 @@ var slduPath = "./data/ca-sldu.json";
 var sldlPath = "./data/ca-sldl.json";
 
 var layerID = 'my-custom-layer';
-var TILE_URL = 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
+var TILE_URL = 'https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid29sZmdhbmctbXB6IiwiYSI6ImNqMnczY2xqYjAwZW8zM255MGlwc2g1NWYifQ.dKJgOK8K1MywiRftFeeomA';
+
+//'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
 	//'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 	//'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';		 
 	//'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png';
